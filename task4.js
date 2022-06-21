@@ -6,8 +6,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
     return res.json()
 })
 .then(data => {
-    data.forEach(e => {
-        console.log(data[e.id - 1].name)
-    });
+    data.map(e => {
+        console.log(e.name)
+    })
 })
 .catch(err => console.log('ERROR'))
