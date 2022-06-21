@@ -12,7 +12,9 @@ const getMonth = (cb) => {
 
 getMonth((result, month) => {
     if(result === null){
-        console.log(month)
+        month.map(e => {
+            console.log(e)
+        });
     }else{
         console.log(result.message);
     }
