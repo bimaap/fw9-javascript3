@@ -6,7 +6,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     return res.json()
 })
 .then(data => {
-    data.map(e => {
+    data.forEach(e => {
         console.log(e.name)
     })
 })
